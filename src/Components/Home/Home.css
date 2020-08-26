@@ -1,0 +1,127 @@
+/* .appContainer{
+    background-color: rgb(3, 11, 51);  
+} */
+#covid_img{
+    width: 120px;
+    height: 220px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transform: rotate(60deg);
+}
+#covid_imgOne{
+    width: 120px;
+    height: 220px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transform: rotate(20deg);
+}
+
+.sectionOne{
+    background-color: rgb(3, 11, 51);
+    border-radius: 55% 44% 50% 49% / 0% 0% 33% 50%  ;
+    color: white;
+    padding: 20px;
+   margin: 0px 0px 10px 0px;
+
+}
+.sectionTwo{
+    /* background-color: rgb(3, 11, 51); */
+    /* border-radius: 55% 44% 50% 49% / 0% 0% 33% 50%  ; */
+    color: black;
+   margin: 0px 0px 10px 0px;
+
+}
+.cardstyle{
+    width: 30rem;
+    height: 18rem;
+    margin-bottom: 10px;
+}
+.hospital{
+    width: 10rem;
+    margin-top: 10px;
+}
+.getStartBtn{
+    background-color:#2bd69a;
+    width: 200px;
+    height: 50px;
+    border-radius: 48% 100% 95% 46% / 96% 100% 77% 91%    ;
+    color: white;
+}
+.getStartLink{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+.navTabsContainer{
+    background-color: rgb(3, 11, 51);
+    font-weight: bolder;
+}
+.navTabsLink{
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2rem;
+}
+.navpatientTabsLink{
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    /* font-size: 2rem; */
+}
+.inputsStyle{
+    border: 2px solid #111130;
+}
+.inputslabelStyle{
+    font-weight: bolder;
+    color: black;
+}
+.navTabsBtn{
+    background-color: rgb(3, 11, 51);
+    font-weight: bolder;
+    color: white;
+}
+.navTabsBtnlogin{
+    background-color: rgb(3, 11, 51);
+    font-weight: bolder;
+    color: white;
+    width: 10rem;
+}
+.loadinganim{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 40%;
+    right: 50%;
+}
+.doctorNoteInput{
+    height: 200px;
+}
+.doctorActionButton{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.navTabsBtneditdoctor{
+    background-color: rgb(3, 11, 51);
+    font-weight: bolder;
+    color: white;
+    width: 15rem;
+    
+}
+.fileuploadinput{
+    border: 2px solid #111130;
+    margin-top: 5px;
+    height: 2em;
+    align-content: center;
+    margin: 5px;
+    background-color: #e3e3e3;
+}
+.inputSelectStyle{
+    width: 20rem;
+}

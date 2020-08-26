@@ -1,0 +1,26 @@
+.NavColor {
+  background-color: rgb(3, 11, 51);
+  color: white;
+}
+.whiteColor {
+  color: #fff;
+  font-weight: bolder;
+}
+.whiteColor > a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+.NavColor .brandColor {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.iconColor {
+    background-color:white;
+}
