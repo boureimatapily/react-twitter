@@ -9,12 +9,19 @@
     transform: rotate(60deg);
 } */
 #covid_imgOne{
-    width: 20rem;
-    height: 15rem;
+    width: 18rem;
+    height: 13rem;
     margin-bottom: 20px;
     border-radius: 10px;
     /* transform: rotate(20deg); */
 }
+.homeBtn{
+    width: 15rem;
+}
+/* .btnlogin{
+    width: 5rem;
+    height: 5rem;
+} */
 
 .sectionOne{
     background-color: rgb(250, 250, 250);
@@ -81,6 +88,10 @@
 .inputslabelStyle{
     font-weight: bolder;
     color: black;
+}
+.creditImg{
+    height:20rem;
+    width:10rem
 }
 .navTabsBtn{
     background-color: rgb(3, 11, 51);
