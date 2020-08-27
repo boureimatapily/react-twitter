@@ -43,7 +43,7 @@ class AddUser extends React.Component {
         <div className="row">
           <div className="col card">
             <form onSubmit={this.handleSubmit} id="form">
-              <div className="row">
+              <div className="row text-left">
                 <div className="form-group col-sm-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-2">
                   <label htmlFor="email" className="form-label">
                     Email address
@@ -72,7 +72,7 @@ class AddUser extends React.Component {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="row text-left">
                 <div className="mb-2">
                   <label htmlFor="fullname" className="form-label">
                     fullname
@@ -100,9 +100,9 @@ class AddUser extends React.Component {
                
               </div>
               <div className="row align-items-center">
-                <div className="form-group col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-2">
-                  <button type="submit" className="btn btn-primary navTabsBtn">
-                    ADD DOCTOR
+                <div className="form-group col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-12 col-xxl-12 mb-2 text-center">
+                  <button type="submit" className="btn btn-primary navTabsBtn homeBtn ">
+                   Sign up
                   </button>
                 </div>
               </div>
