@@ -14,30 +14,34 @@ class Home extends Component {
       <div className="container appContainer">
         <div className="row">
           <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-            <div className=" text-center sectionOne">
+            <div className=" text-center sectionOne mt-3">
               <h2 className="font-weight-bolder display-5">
                 WELCOME TO YOUR EVERYDAY SUSU APP
               </h2>
               <span className="font-weight-bold">
-                Create an account, Add your susu menber and Save
+                Create an account, Add your susu menbers and Save
               </span>
             </div>
-            <div>
+            <div className="text-center">
+              
               <button
                 type="submit"
-                className="btn btn-primary navTabsBtnlogin text-center"
-              >
-                Sign up 
-              </button>
-              <button
-                type="submit"
-                className="btn btn-primary navTabsBtnlogin text-center"
+                className="btn btn-primary navTabsBtnlogin text-center homeBtn "
               >
                 Login
               </button>
             </div>
+            <div>
+            <img
+              src={require("../Images/wallet.png")}
+              alt="covid"
+              id="covid_imgOne"
+              className="d-none d-md-block"
+            />
+            </div>
+
           </div>
-          <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-center">
+          <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-right">
             <img
               src={require("../Images/saving.png")}
               alt="covid"
