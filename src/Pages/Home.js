@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "../Components/Home/Home.css";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import Signup from "./Signup";
 
 class Home extends Component {
   render() {
@@ -36,36 +37,17 @@ class Home extends Component {
               </button>
             </div>
           </div>
-          <div className="col d-flex flex-row justify-content-evenly align-items-center ">
+          <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-center">
             <img
               src={require("../Images/saving.png")}
               alt="covid"
               id="covid_imgOne"
               className="d-none d-md-block"
             />
+            <Signup />
           </div>
         </div>
-        <div className="row sectionTwo">
-          <div className="col-sm-12 col-md-6col-lg-6col-xl-6col-xxl-6col-xxl-6d-flex flex-row justify-content-center align-items-center">
-            <div className="card cardstyle d-flex flex-column justify-content-center align-items-center">
-              <img
-                src={require("../Images/hospital.jpg")}
-                className="card-img-top hospital"
-                alt="hospital_img"
-              />
-              <div className="card-body d-flex flex-column justify-content-center align-items-center">
-                <h5 className="card-title">JOIN US FOR FREE</h5>
-                <p className="card-text">Enjoy Susu</p>
-                <Link to="/hospital" className="getStartLink">
-                  <button type="button" className="getStartBtn">
-                    Get Started
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-6col-lg-6col-xl-6col-xxl-6col-xxl-6d-flex flex-row justify-content-center align-items-center"></div>
-        </div>
+        
       </div>
     );
   }
