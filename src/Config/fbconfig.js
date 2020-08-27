@@ -7,13 +7,13 @@ import "firebase/storage";
 import "firebase/analytics";
 
 var firebaseConfig = {
-  apiKey: "AIzaSyB9sIGOPZPiI4aRh3n5YEu7wRA79lBn0eY",
-  authDomain: "covid-care-a267c.firebaseapp.com",
-  databaseURL: "https://covid-care-a267c.firebaseio.com",
-  projectId: "covid-care-a267c",
-  storageBucket: "covid-care-a267c.appspot.com",
-  messagingSenderId: "783260378487",
-  appId: "1:783260378487:web:ccaa9783f729e1246c2d72"
+  apiKey: "AIzaSyDss5CB4GzWYs3Q2IZFbwLY-nVOhni54HA",
+  authDomain: "susumarket-422e3.firebaseapp.com",
+  databaseURL: "https://susumarket-422e3.firebaseio.com",
+  projectId: "susumarket-422e3",
+  storageBucket: "susumarket-422e3.appspot.com",
+  messagingSenderId: "903857271492",
+  appId: "1:903857271492:web:a311c75f69f2c8a46a4f91"
 };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
