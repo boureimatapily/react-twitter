@@ -43,18 +43,12 @@ class Login extends React.Component {
             </div>
             <div className="col d-flex flex-row justify-content-evenly align-items-center ">
               <img
-                src={require("../Images/phone.JPG")}
+                src={require("../Images/saving.svg")}
                 alt="covid"
                 id="covid_imgOne"
                 className="d-none d-md-block"
               />
 
-              <img
-                src={require("../Images/phone.JPG")}
-                alt="covid"
-                id="covid_img"
-                className="d-none d-md-block"
-              />
             </div>
           </div>
         <div className="row">
