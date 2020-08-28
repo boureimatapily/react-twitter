@@ -9,7 +9,7 @@ import Signup from "./Signup";
 class Home extends Component {
   render() {
     const { uid} = this.props;
-    if (uid) return <Redirect to="/doctor" />;
+    if (uid) return <Redirect to="/dashboard" />;
 
     return (
       <div className="container appContainer">

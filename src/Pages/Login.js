@@ -30,7 +30,7 @@ class Login extends React.Component {
   render() {
     const { uid } = this.props;
     if (uid) {
-      return <Redirect to="/" />;
+      return <Redirect to="/dashboard" />;
     }
     return (
       <div className="container">
