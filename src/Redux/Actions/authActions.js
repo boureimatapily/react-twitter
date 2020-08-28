@@ -22,25 +22,8 @@ export const register = (creds) => {
             userid:res.user.uid,
             fullname: creds.fullname,
             email: creds.email,
-            role: creds.role,
-            department: creds.department,
-            speciality: creds.speciality,
-            status: creds.status,
-            initials: creds.fullname[0] + creds.fullname[1],
-            mondayopen: creds.mondayopen,
-            mondayclose: creds.mondayclose,
-            tuesdayopen: creds.tuesdayopen,
-            tuesdayclose: creds.tuesdayclose,
-            wednesdayopen: creds.wednesdayopen,
-            wednesdayclose: creds.wednesdayclose,
-            thursdayopen: creds.thursdayopen,
-            thursdayclose: creds.thursdayclose,
-            fridayopen: creds.fridayopen,
-            fridayclose: creds.fridayclose,
-            saturdayopen: creds.saturdayopen,
-            saturdayclose: creds.saturdayclose,
-            sundayopen: creds.sundayopen,
-            sundayclose: creds.sundayclose,
+            address: creds.address,
+            
           });
       })
       .then(() => {
