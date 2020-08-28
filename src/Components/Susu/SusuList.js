@@ -34,7 +34,7 @@ class SusuList extends Component {
     return (
       <div className="container">
         <div className="row">
-        <h1 className="mt-3">ALL Susu Group</h1>
+        <h1 className="mt-3 text-center">ALL Your Susu Group</h1>
           <div className="col d-flex flex-row flex-wrap">
             { susulist &&
                susulist.map(( susu) => (
@@ -42,7 +42,7 @@ class SusuList extends Component {
                   key={susu.groupNmae}
                   className="col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-2"
                 >
-                  <SusuItem susu={susu} />
+                  <SusuItem key={susu.groupName}susu={susu} />
                 </div>
               ))}
           </div>
