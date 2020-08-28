@@ -9,9 +9,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import Login from "./Pages/Login";
 import EditPatient from "./Components/Hospital/Patient/EditPatient";
 import PatientList from "./Components/Hospital/Patient/PatientList";
-import EditDoctor from "./Components/Hospital/Doctor/EditDoctor";
+//import EditDoctor from "./Components/Hospital/Doctor/EditDoctor";
 import EditSingleDoctor from "./Components/Hospital/Doctor/EditSingleDoctor";
 import AdminPatientTab from "./Components/Hospital/AdminPatientTab";
+import EditGroup from "./Components/Susu/EditGroup";
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
         <Route exact path="/hospital" component={Hospital} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/edit/:id" component={EditPatient} />
-        <Route exact path="/editdoctor/:id" component={EditDoctor} />
+        <Route exact path="/editgroup/:id" component={EditGroup} />
         <Route exact path="/editsingledoctor/:id" component={EditSingleDoctor} />
         <Route exact path="/patientlist" component={PatientList} />
       </Switch>
