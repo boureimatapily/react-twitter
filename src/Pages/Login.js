@@ -36,7 +36,7 @@ class Login extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col d-none d-md-block justify-content-center align-items-center">
-            <h1>Let it rain</h1>
+            <h1 className="text-center mt-3">ADD UNLIMITED SUSU GROUP FOR FREE</h1>
           <img
               src={require("../Images/credit.png")}
               alt="covid"
