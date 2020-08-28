@@ -1,11 +1,9 @@
 import React from "react";
 import "./Navbar/Navbar.css";
 import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import { logout } from "../Redux/Actions/authActions";
-//import firebase from "../Config/fbconfig"
 
-function SignedOutNavbar({logout, uid, profile}) {
+
+function SignedOutNavbar() {
   
     return (
       <div className="container">
@@ -14,7 +12,7 @@ function SignedOutNavbar({logout, uid, profile}) {
             <nav className="navbar navbar-expand-lg navbar-light NavColor">
               <div className="container-fluid">
                 <Link className="navbar-brand brandColor" to="/">
-                  Covid Care
+                Susu market
                 </Link>
                 <button
                   className="navbar-toggler"
@@ -68,13 +66,5 @@ function SignedOutNavbar({logout, uid, profile}) {
   
 }
 
-const mStp = (state) => {
-  // console.log(state)
-  const uid = state.firebase.auth.uid;
-  const profile = state.firebase.auth.profile;
-  return {
-    uid: uid,
-    profile: profile
-  };
-};
-export default connect(mStp, {logout })(SignedOutNavbar);
+
+export default SignedOutNavbar
