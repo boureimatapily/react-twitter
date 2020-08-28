@@ -9,11 +9,8 @@ class EditSingleDoctor extends React.Component {
     super(props);
     this.state = {
       fullname: "",
-      status: "",
-      department: "",
-      speciality: "",
-      userid:""
-    };
+      address:""
+    }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -47,10 +44,9 @@ class EditSingleDoctor extends React.Component {
 
         this.setState({
           fullname: Edoctor.fullname,
-          status: Edoctor.status,
-          department: Edoctor.department,
-          speciality: Edoctor.speciality,
-          userid: Edoctor.userid
+          email: Edoctor.email,
+            address: Edoctor.address,
+          
         }); //items is equal to listItems
       });
   }
@@ -77,47 +73,31 @@ class EditSingleDoctor extends React.Component {
                   />
                 </div>
                 <div className="form-group col-sm-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-2">
-                  <label htmlFor="department">Department</label>
+                  <label htmlFor="department">email</label>
                   <input
-                    value={this.state.department}
+                    value={this.state.email}
                     onChange={this.handleChange}
                     type="text"
-                    id="departmentinput"
-                    name="department"
+                    id="emailinput"
+                    name="email"
                     className="form-control inputsStyle"
                   />
                 </div>
                 <div className="form-group col-sm-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-2">
-                  <label htmlFor="speciality">speciality</label>
+                  <label htmlFor="speciality">address</label>
                   <input
-                    value={this.state.speciality}
+                    value={this.state.address}
                     onChange={this.handleChange}
                     type="text"
-                    id="specialityinput"
-                    name="speciality"
+                    id="addressinput"
+                    name="address"
                     className="form-control inputsStyle"
                   />
                 </div>
               </div>
               <div className="row align-items-center">
                 <div className="form-group col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-2">
-                  <div className="form-group col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-2">
-                    <label htmlFor="fullname" className="form-label mr-3">
-                      Status
-                    </label>
-                    <select
-                      className="form-select form-select-lg mb-3 inputsStyle inputSelectStyle"
-                      aria-label="Default select example"
-                      name="status"
-                      value={this.state.status}
-                      onChange={this.handleChange}
-                    >
-                      <option defaultValue>Choose Doctor Status</option>
-                      <option value="Quanrantined">Quanrantined Doctor</option>
-                      <option value="Home">Work from Home</option>
-                      <option value="Hospital">Availbable(In Hospital)</option>
-                    </select>
-                  </div>
+                  
                   <button
                     type="submit"
                     className="btn btn-primary navTabsBtneditdoctor"

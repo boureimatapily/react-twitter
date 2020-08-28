@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
-import Doctor from "./Pages/Doctor";
+import Dashboard from "./Pages/Dashboard";
 import Hospital from "./Pages/Hospital";
 import Navbar from "./Components/Navbar";
 import { ToastContainer } from "react-toastify"; // ToastContainer to acces to toast notify everywhere in the project
@@ -14,7 +14,6 @@ import EditSingleDoctor from "./Components/Hospital/Doctor/EditSingleDoctor";
 import AdminPatientTab from "./Components/Hospital/AdminPatientTab";
 
 
-
 function App() {
   return (
     <React.Fragment>
@@ -22,7 +21,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/doctor" component={Doctor} />
+        <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/adminpatienttab" component={AdminPatientTab} />
         <Route exact path="/hospital" component={Hospital} />
         <Route exact path="/login" component={Login} />
