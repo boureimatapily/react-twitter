@@ -12,9 +12,9 @@ function SignedInNavbar({logout}) {
           <div className="col">
             <nav className="navbar navbar-expand-lg navbar-light NavColor">
               <div className="container-fluid">
-                <Link className="navbar-brand brandColor" to="/">
+                <div className="navbar-brand brandColor">
                 Susu market
-                </Link>
+                </div>
                 <button
                   className="navbar-toggler"
                   type="button"
@@ -37,7 +37,7 @@ function SignedInNavbar({logout}) {
                   id="navbarSupportedContent"
                 >
                   <ul className="navbar-nav mr-auto mb-2 mb-lg-0 ">
-                    <li className="nav-item whiteColor ">
+                    {/* <li className="nav-item whiteColor ">
                       <Link
                         className=" active"
                         aria-current="page"
@@ -45,14 +45,14 @@ function SignedInNavbar({logout}) {
                       >
                         Home
                       </Link>
-                    </li>
+                    </li> */}
                     {/* <li className="nav-item whiteColor">
                       <Link className="NavBtnLink" to="/doctor">
                         Doctor
                       </Link>
                     </li> */}
                     <li className="nav-item whiteColor ">
-                      <Link to="/hospital" className="NavBtnLink">
+                      <Link to="/dashboard" className="NavBtnLink">
                         Dashboard
                       </Link>
                     </li>
