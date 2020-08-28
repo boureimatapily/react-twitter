@@ -23,17 +23,18 @@ class Home extends Component {
               </span>
             </div>
             <div className="text-center">
-              
-              <button
+             <Link to="/login">
+             <button
                 type="submit"
                 className="btn btn-primary navTabsBtnlogin text-center homeBtn "
               >
-                Login
+                Get Started
               </button>
+             </Link>
             </div>
             <div>
             <img
-              src={require("../Images/wallet.png")}
+              src={require("../Images/saving.png")}
               alt="covid"
               id="covid_imgOne"
               className="d-none d-md-block"
@@ -43,7 +44,7 @@ class Home extends Component {
           </div>
           <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-right">
             <img
-              src={require("../Images/saving.png")}
+              src={require("../Images/wallet.png")}
               alt="covid"
               id="covid_imgOne"
               className="d-none d-md-block"

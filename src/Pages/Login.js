@@ -35,7 +35,16 @@ class Login extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col justify-content-center align-items-center">
+          <div className="col d-none d-md-block justify-content-center align-items-center">
+            <h1>Let it rain</h1>
+          <img
+              src={require("../Images/credit.png")}
+              alt="covid"
+              id="creditImg"
+              className="d-none d-md-block"
+            />
+          </div>
+          <div className="col   justify-content-center align-items-center">
             <h1 className="text-center"> Login Page</h1>
             <form onSubmit={this.handleSubmit} id="form">
               <div className="mb-3">

@@ -13,7 +13,7 @@ function SignedOutNavbar({logout, uid, profile}) {
           <div className="col">
             <nav className="navbar navbar-expand-lg navbar-light NavColor">
               <div className="container-fluid">
-                <Link className="navbar-brand brandColor" to="#">
+                <Link className="navbar-brand brandColor" to="/">
                   Covid Care
                 </Link>
                 <button
@@ -44,6 +44,11 @@ function SignedOutNavbar({logout, uid, profile}) {
                   id="navbarSupportedContent"
                 >
                   <ul className="navbar-nav mr-auto mb-2 mb-lg-0 ">
+                  <li className="nav-item whiteColor ">
+                      <Link to="/" className="NavBtnLink" >
+                        Home
+                      </Link>
+                    </li>
                     
                     <li className="nav-item whiteColor ">
                       <Link to="/login" className="NavBtnLink">
@@ -51,11 +56,7 @@ function SignedOutNavbar({logout, uid, profile}) {
                       </Link>
                     </li>
                    
-                    {/* <li className="nav-item whiteColor ">
-                      <Link to="/" className="NavBtnLink" onClick={logout}>
-                        Log Out
-                      </Link>
-                    </li> */}
+                    
                   </ul>
                 </div>
               </div>

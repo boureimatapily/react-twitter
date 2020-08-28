@@ -9,8 +9,8 @@
     transform: rotate(60deg);
 } */
 #covid_imgOne{
-    width: 18rem;
-    height: 13rem;
+    width: 23rem;
+    height: 15rem;
     margin-bottom: 20px;
     border-radius: 10px;
     /* transform: rotate(20deg); */
@@ -89,9 +89,9 @@
     font-weight: bolder;
     color: black;
 }
-.creditImg{
-    height:20rem;
-    width:10rem
+#creditImg{
+    height:30rem;
+    width:30rem
 }
 .navTabsBtn{
     background-color: rgb(3, 11, 51);
