@@ -2,7 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import firebase from "../../Config/fbconfig";
 import { updateGroup } from "../../Redux/Actions/UserActions";
-
+import { Link } from "react-router-dom";
+import AddSusuType from "./AddSusuType";
 
 class EditGroup extends React.Component {
   constructor(props) {
@@ -41,7 +42,6 @@ class EditGroup extends React.Component {
         });
         this.setState({
           groupName: susus.groupName,
-          
         }); //items is equal to listItems
       });
 
@@ -50,13 +50,18 @@ class EditGroup extends React.Component {
   }
 
   render() {
-    //const doctorid = this.props.match.params.id;
+    const groupId = this.props.match.params.id;
     // console.log(this.state)
     return (
       <div className="container">
         <div className="row">
           <div className="col">
-          <form onSubmit={this.handleSubmit}>
+            <Link to="/dashboard">
+            <button type="submit" className="btn btn-primary my-3 navTabsBtn">
+              Go Back
+            </button>
+            </Link>
+            <form onSubmit={this.handleSubmit}>
               <div className="row">
                 <div className="form-group col-md-6 mb-2">
                   <label htmlFor="groupName" className="inputslabelStyle">
@@ -84,17 +89,17 @@ class EditGroup extends React.Component {
           </div>
         </div>
         <div className="row">
-          <div className="col">
-            <h1>ADD YOUR SUSU MEMBERS</h1>
-            {/* <AddPatient doctorid={doctorid} /> */}
+          <div className="col-sm-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <h1>ADD YOUR SUSU PAYMENT FREQUENCY</h1>
+            <AddSusuType  groupId={groupId} />
           </div>
+          <div className="col-sm-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <h1>ALL YOUR SUSU</h1>
+
         </div>
-        <div className="row">
-          <div className="col">
-            {/* <PatientTab doctorid={doctorid} /> */}
-            {/* <PatientList doctorid={doctorid} /> */}
-          </div>
         </div>
+        
+      
       </div>
     );
   }

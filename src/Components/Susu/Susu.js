@@ -11,6 +11,7 @@ class Susu extends Component {
       <div className="container">
         <div className="row">
             <div className="col">
+            <h1 className="mt-3">You can Create Unlimited Susu Group</h1>
                 <AddGroup />
             </div>
         </div>

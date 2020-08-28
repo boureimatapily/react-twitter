@@ -51,7 +51,7 @@ class AddGroup extends React.Component {
                     type="submit"
                     className="btn btn-primary my-3 navTabsBtn"
                   >
-                    ADD Patient
+                    ADD Susu Group
                   </button>
                 </div>
               </div>
