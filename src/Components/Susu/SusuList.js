@@ -10,8 +10,7 @@ class SusuList extends Component {
       susulist: [],
     };
   }
- 
-  componentDidMount() {
+  getSusuList=()=>{
     const useruid = this.props.uid;
     firebase
       .firestore() //access firestore
@@ -26,6 +25,10 @@ class SusuList extends Component {
         }));
         this.setState({ susulist: listItems }); //items is equal to listItems
       });
+  }
+ 
+  componentDidMount() {
+    this.getSusuList()
   }
   render() {
     console.log(this.state);

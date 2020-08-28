@@ -24,13 +24,13 @@ export const addSusuType = (id,account) => {
     
     firestore
       .collection("susutype")
-      .doc(id)
-      .set({
+      .add({
         ...account,
         authorId: authorId,
         sId: authorId,
+        typeId:id,
         date: new Date(),
-      },{merge:true})
+      })
       .then(() => {
         dispatch({ type: ADD_USER_INFO }, account);
       })

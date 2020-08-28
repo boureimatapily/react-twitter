@@ -4,6 +4,8 @@ import firebase from "../../Config/fbconfig";
 import { updateGroup } from "../../Redux/Actions/UserActions";
 import { Link } from "react-router-dom";
 import AddSusuType from "./AddSusuType";
+import SusuTypeList from "./SusuTypeList";
+
 
 class EditGroup extends React.Component {
   constructor(props) {
@@ -95,6 +97,7 @@ class EditGroup extends React.Component {
           </div>
           <div className="col-sm-12 col-xs-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
             <h1>ALL YOUR SUSU</h1>
+          <SusuTypeList groupId={groupId}  />
 
         </div>
         </div>
