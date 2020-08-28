@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 import UserProfile from "../Components/Hospital/Doctor/UserProfile";
+import Susu from "../Components/Susu/Susu";
 
 function Dashboard({ uid }) {
   if (!uid) return <Redirect to="/login" />;
@@ -17,7 +18,7 @@ function Dashboard({ uid }) {
           </div>
           <div className="col-sm-12 col-xs-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9 mt-3">
             <div className="tab-content" id="v-pills-tabContent ">
-              <div className="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">welcome susu</div>
+              <div className="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><Susu/></div>
               <div className="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"> <UserProfile/> </div>
             </div>
          
