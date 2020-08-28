@@ -15,6 +15,48 @@ import {
   UPLOAD_FILE_ERR
 } from "../Type";
 
+//Update Group
+export const updateGroup = (id, account) => {
+  return (dispatch, getState, { getFirebase }) => {
+    const firestore = getFirebase().firestore();
+    // const id = account.userId;
+    firestore
+      .collection("group")
+      .doc(id)
+      .set(
+        {
+          ...account,
+        },
+        { merge: true }
+      )
+      .then(() => {
+        dispatch({ type: UPDATE_USER });
+      })
+      .catch((err) => {
+        dispatch({ type: UPDATE_USER_ERR, err });
+      });
+  };
+};
+
+//Delete Susu Group
+export const deleteGroup = (account) => {
+  return (dispatch, getState, { getFirebase }) => {
+    const firestore = getFirebase().firestore();
+    // const id = account.userId;
+    firestore
+      .collection("group")
+      .doc(account.id)
+      .delete()
+      .then(() => {
+        dispatch({ type: DELETE_USER });
+      })
+      .catch((err) => {
+        dispatch({ type: DELETE_USER_ERR, err });
+        console.log(err);
+      });
+  };
+};
+
 //Add new Susu Group
 export const addGroup = (account) => {
   return (dispatch, getState, { getFirebase }) => {
@@ -26,6 +68,7 @@ export const addGroup = (account) => {
       .add({
         ...account,
         authorId: authorId,
+        sId: authorId,
         date: new Date(),
       })
       .then(() => {

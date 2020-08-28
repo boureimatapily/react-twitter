@@ -31,7 +31,7 @@ const UserReducer = (state = {}, action) => {
       toast.error("an error occured, retry please");
       return state;
     case DELETE_USER:
-      toast.warn("Patient deleted");
+      toast.warn("Group deleted");
       return state;
     case DELETE_USER_ERR:
       toast.error("an error occured");
@@ -43,10 +43,10 @@ const UserReducer = (state = {}, action) => {
         toast.error("an error occured, try again");
         return state;
     case UPDATE_USER:
-         toast.info("Info updated");
+         toast.info("Group updated");
          return state;
     case UPDATE_USER_ERR:
-         toast.error("Infos update error");
+         toast.error(" update error");
          return state;
     case ADD_DEPARTMENT:
           toast.info("Department added");
