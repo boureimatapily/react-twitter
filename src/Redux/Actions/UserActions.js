@@ -15,6 +15,50 @@ import {
   UPLOAD_FILE_ERR
 } from "../Type";
 
+//Add new Susu Group
+export const addGroup = (account) => {
+  return (dispatch, getState, { getFirebase }) => {
+    const firestore = getFirebase().firestore();
+    const authorId = getState().firebase.auth.uid;
+    
+    firestore
+      .collection("group")
+      .add({
+        ...account,
+        authorId: authorId,
+        date: new Date(),
+      })
+      .then(() => {
+        dispatch({ type: ADD_USER_INFO }, account);
+      })
+      .catch((err) => {
+        dispatch({ type: ADD_USER_INFO_ERR }, err);
+      });
+  };
+};
+
+// export const addGroupe = (doctorid,account) => {
+//   return (dispatch, getState, { getFirebase }) => {
+//     const firestore = getFirebase().firestore();
+//     // const authorId = getState().firebase.auth.uid;
+    
+//     firestore
+//       .collection("groupe")
+//       .add({
+//         ...account,
+//         authorId: doctorid,
+//         dId: doctorid,
+//         date: new Date(),
+//       })
+//       .then(() => {
+//         dispatch({ type: ADD_USER_INFO }, account);
+//       })
+//       .catch((err) => {
+//         dispatch({ type: ADD_USER_INFO_ERR }, err);
+//       });
+//   };
+// };
+
 export const uploadfiles = (path, files) => {
   return(dispatch, getState, { getFirebase }) =>{
     const firebase = getFirebase()

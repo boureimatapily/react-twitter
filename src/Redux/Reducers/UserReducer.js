@@ -19,7 +19,7 @@ import { toast } from "react-toastify";
 const UserReducer = (state = {}, action) => {
   switch (action.type) {
     case ADD_USER_INFO:
-      toast.success("Patient infos added");
+      toast.success("Susu Groupe added");
       return state;
     case UPLOAD_FILE:
       toast.success("file uploaded");
@@ -28,7 +28,7 @@ const UserReducer = (state = {}, action) => {
       toast.error("file upload error");
       return state;
     case ADD_USER_INFO_ERR:
-      toast.error("an error occured");
+      toast.error("an error occured, retry please");
       return state;
     case DELETE_USER:
       toast.warn("Patient deleted");
