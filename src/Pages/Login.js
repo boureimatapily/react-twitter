@@ -84,8 +84,8 @@ class Login extends React.Component {
                 Login
               </button>
             </form>
-            <h4>test email: test@test.com</h4>
-            <h4>password: susu@123*</h4>
+            {/* <h4>test email: test@test.com</h4>
+            <h4>password: susu@123*</h4> */}
           </div>
         </div>
       </div>
