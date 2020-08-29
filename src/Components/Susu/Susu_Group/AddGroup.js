@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import {addGroup } from "../../Redux/Actions/UserActions";
+import {addGroup } from "../../../Redux/Actions/UserActions";
 
 class AddGroup extends React.Component {
   constructor(props) {
