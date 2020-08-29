@@ -20,7 +20,7 @@ class Home extends Component {
                 WELCOME TO OUR EVERYDAY SUSU APP
               </h2>
               <span className="font-weight-bold">
-                Create an account, Add your Susu menbers and Save
+                Create an account, Add your Susu Groups
               </span>
             </div>
             <div className="text-center">
