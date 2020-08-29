@@ -10,9 +10,10 @@ import Login from "./Pages/Login";
 import EditPatient from "./Components/Hospital/Patient/EditPatient";
 import PatientList from "./Components/Hospital/Patient/PatientList";
 //import EditDoctor from "./Components/Hospital/Doctor/EditDoctor";
-import EditSingleDoctor from "./Components/Hospital/Doctor/EditSingleDoctor";
+// import EditSingleDoctor from "./Components/Hospital/Doctor/EditSingleDoctor";
 import AdminPatientTab from "./Components/Hospital/AdminPatientTab";
-import EditGroup from "./Components/Susu/EditGroup";
+import EditGroup from "./Components/Susu/Susu_Group/EditGroup";
+import EditSusuType from "./Components/Susu/EditSusuType";
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
         <Route exact path="/login" component={Login} />
         <Route exact path="/edit/:id" component={EditPatient} />
         <Route exact path="/editgroup/:id" component={EditGroup} />
-        <Route exact path="/editsingledoctor/:id" component={EditSingleDoctor} />
+        <Route exact path="/singlesusu/:id" component={EditSusuType} />
         <Route exact path="/patientlist" component={PatientList} />
       </Switch>
     </React.Fragment>
