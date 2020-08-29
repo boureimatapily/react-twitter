@@ -1,22 +1,23 @@
 import React from "react";
 import firebase from "../../../Config/fbconfig";
 import { connect } from "react-redux";
-import SingleSusuType from "./SingleSusuType";
+import SingleSusuPayement from "./SingleSusuPayement";
 
-class SusuTypeList extends React.Component {
+class SusuPaymentList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      susuTList: [],
+      paymentList: [],
     };
   }
-  getSusuType= () =>{
-    const { uid, groupId } = this.props;
+  getPaymentList=()=>{
+    const {uid, groupId} = this.props
     firebase
       .firestore() //access firestore
-      .collection("susutype") //access "items" collection
+      .collection("susupayment") //access "items" collection
       .where("authorId", "==", uid)
-      .where("typeId", "==", groupId)
+      .where("paymentId", "==", groupId)
+      .where("sId", "==", groupId)
       .onSnapshot((snapshot) => {
         //You can "listen" to a document with the onSnapshot() method.
         const listItems = snapshot.docs.map((doc) => ({
@@ -24,14 +25,15 @@ class SusuTypeList extends React.Component {
           id: doc.id, //id and data pushed into items array
           ...doc.data(), //spread operator merges data to id.
         }));
-        this.setState({ susuTList: listItems }); //items is equal to listItems
+        this.setState({ paymentList: listItems }); //items is equal to listItems
       });
   }
+
   componentDidMount() {
-  this.getSusuType()
+    this.getPaymentList()
   }
   render() {
-    const { susuTList } = this.state;
+    const { paymentList} = this.state;
 
 
     return (
@@ -42,14 +44,15 @@ class SusuTypeList extends React.Component {
               <thead>
                 <tr>
                   {/* <th scope="col">Date</th> */}
-                  <th scope="col">Type</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Dialy Susu</th>
+                  {/* <th scope="col">Date</th> */}
+                  <th scope="col">Fullname</th>
+                  <th scope="col">Amount</th>
+                 
                 </tr>
               </thead>
               <tbody>
-                {susuTList &&
-                  susuTList.map((susut) => <SingleSusuType susut={susut} />)}
+                {paymentList &&
+                  paymentList.map((payment) => <SingleSusuPayement payment={payment}  />)}
               </tbody>
             </table>
           </div>
@@ -61,11 +64,10 @@ class SusuTypeList extends React.Component {
 
 const mStp = (state) => {
   const uid = state.firebase.auth.uid;
-  // const profile = state.firebase.profile;
+  
   return {
     uid: uid,
-    //   profile: profile,
   };
 };
 
-export default connect(mStp)(SusuTypeList);
+export default connect(mStp)(SusuPaymentList);
