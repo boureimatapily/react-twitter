@@ -1,15 +1,15 @@
 import React from "react";
 // import moment from "moment";
 import trash from "../../Images/icons/trash-fill.svg";
-// import pencil from "../../Images/icons/pencil.svg";
+import pencil from "../../Images/icons/pencil.svg";
 import "../Hospital/Patient/patient.css";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { deletePatient } from "../../Redux/Actions/UserActions";
+import { deleteSusuType } from "../../Redux/Actions/UserActions";
 
-function SingleSusuType({ susut, deletePatient }) {
+function SingleSusuType({ susut, deleteSusuType }) {
   const handleRemove = (susut) => {
-    delete deletePatient(susut);
+    delete deleteSusuType(susut);
   };
 
   return (
@@ -32,16 +32,16 @@ function SingleSusuType({ susut, deletePatient }) {
               onClick={() => handleRemove(susut)}
             />{" "}
           </button>
-          <Link to={"/edit/" + susut.id}>
+          <Link to={"/singlesusu/" + susut.id}>
             <button type="button" className="btn btn-secondary btnaction">
-              {/* <img
+              <img
                 src={pencil}
                 alt="pencil"
                 id="pencil"
                 width="20"
                 height="20"
                 title="delete"
-              /> */}ADD PAYMENT
+              />ADD PAYMENT
             </button>
           </Link>
         </th>
@@ -49,4 +49,4 @@ function SingleSusuType({ susut, deletePatient }) {
     </>
   );
 }
-export default connect(null, { deletePatient })(SingleSusuType);
+export default connect(null, { deleteSusuType })(SingleSusuType);

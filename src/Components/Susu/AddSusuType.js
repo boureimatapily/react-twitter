@@ -23,13 +23,13 @@ class AddSusuType extends React.Component {
     e.preventDefault();
     const { type, dialyDate, otherType } = this.state;
     const {groupId}= this.props
-    const newPatient = {
+    const newType = {
       type: type,
       dialyDate: dialyDate,
       otherType: otherType,
     };
 
-    this.props.addSusuType(groupId, newPatient);
+    this.props.addSusuType(groupId, newType);
     this.setState({ type: "", dialyDate: "", otherType: "" });
   };
   render() {
