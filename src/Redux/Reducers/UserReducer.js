@@ -19,7 +19,7 @@ import { toast } from "react-toastify";
 const UserReducer = (state = {}, action) => {
   switch (action.type) {
     case ADD_USER_INFO:
-      toast.success("Susu Groupe added");
+      toast.success(" added succefully");
       return state;
     case UPLOAD_FILE:
       toast.success("file uploaded");
@@ -31,28 +31,28 @@ const UserReducer = (state = {}, action) => {
       toast.error("an error occured, retry please");
       return state;
     case DELETE_USER:
-      toast.warn("Group deleted");
+      toast.warn("deleted");
       return state;
     case DELETE_USER_ERR:
       toast.error("an error occured");
       return state;
     case TOGGLE_CHECKED:
-        toast.info("consulting confirmed");
+        toast.info(" confirmed");
         return state;
     case TOGGLE_CHECKED_ERR:
         toast.error("an error occured, try again");
         return state;
     case UPDATE_USER:
-         toast.info("Group updated");
+         toast.info(" infos updated");
          return state;
     case UPDATE_USER_ERR:
-         toast.error(" update error");
+         toast.error(" update error, retry please");
          return state;
     case ADD_DEPARTMENT:
-          toast.info("Department added");
+          toast.info(" added");
           return state;
     case ADD_DEPARTMENT_ERR:
-          toast.error("An error occured");
+          toast.error("An error occured, retry please");
           return state;
     case ADD_TIME:
           toast.info("times added");

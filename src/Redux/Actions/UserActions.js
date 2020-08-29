@@ -15,6 +15,48 @@ import {
   UPLOAD_FILE_ERR
 } from "../Type";
 
+//Add new Susu Payment
+export const addSusuTypePayment = (id,account) => {
+  return (dispatch, getState, { getFirebase }) => {
+    const firestore = getFirebase().firestore();
+    const authorId = getState().firebase.auth.uid;
+    
+    firestore
+      .collection("susupayment")
+      .add({
+        ...account,
+        authorId: authorId,
+        sId: authorId,
+        paymentId:id,
+        date: new Date(),
+      })
+      .then(() => {
+        dispatch({ type: ADD_USER_INFO }, account);
+      })
+      .catch((err) => {
+        dispatch({ type: ADD_USER_INFO_ERR }, err);
+      });
+  };
+};
+
+//Delete Susu type
+export const deleteSusuType = (account) => {
+  return (dispatch, getState, { getFirebase }) => {
+    const firestore = getFirebase().firestore();
+    // const id = account.userId;
+    firestore
+      .collection("susutype")
+      .doc(account.id)
+      .delete()
+      .then(() => {
+        dispatch({ type: DELETE_USER });
+      })
+      .catch((err) => {
+        dispatch({ type: DELETE_USER_ERR, err });
+        console.log(err);
+      });
+  };
+};
 
 //Add new Susu Type
 export const addSusuType = (id,account) => {

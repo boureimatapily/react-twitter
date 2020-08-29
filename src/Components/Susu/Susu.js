@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AddGroup from "./AddGroup";
+import AddGroup from "./Susu_Group/AddGroup";
 import SusuList from "./SusuList";
 import { connect } from "react-redux";
 

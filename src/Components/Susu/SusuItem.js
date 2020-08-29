@@ -28,6 +28,17 @@ import { deleteGroup } from "../../Redux/Actions/UserActions";
                   onClick={() => handleRemove(susu)}
                 />{" "}
               </button>
+              
+            </div>
+            <div className="card-body">
+              <h6 className="card-title">Groupe Name </h6>
+              <h4 className="card-subtitle mb-2 text-muted">
+                {" "}
+                {susu.groupName}{" "}
+              </h4>
+              <div className="card-text"></div>
+            </div>
+            <div className="doctorActionButton">
               <Link to={"/editgroup/" + susu.id}>
               <button type="button" className="btn btn-secondary btnaction">
                 <img
@@ -41,14 +52,6 @@ import { deleteGroup } from "../../Redux/Actions/UserActions";
                 Add Members
               </button>
               </Link>
-            </div>
-            <div className="card-body">
-              <h6 className="card-title">Groupe Name </h6>
-              <h4 className="card-subtitle mb-2 text-muted">
-                {" "}
-                {susu.groupName}{" "}
-              </h4>
-              <div className="card-text"></div>
             </div>
           </div>
         </div>
