@@ -3,9 +3,8 @@ import { connect } from "react-redux";
 import firebase from "../../../Config/fbconfig";
 import { updateGroup } from "../../../Redux/Actions/UserActions";
 import { Link } from "react-router-dom";
-import AddSusuType from "../AddSusuType";
-import SusuTypeList from "../SusuTypeList";
-
+import AddSusuType from "../Susu_frequency/AddSusuType";
+import SusuTypeList from "../Susu_frequency/SusuTypeList";
 
 
 class EditGroup extends React.Component {

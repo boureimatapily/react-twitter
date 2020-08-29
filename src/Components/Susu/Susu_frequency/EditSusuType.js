@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { addSusuTypePayment } from "../../Redux/Actions/UserActions";
+import { addSusuTypePayment } from "../../../Redux/Actions/UserActions";
 
 class EditSusuType extends React.Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class EditSusuType extends React.Component {
     };
 
     this.props.addSusuTypePayment(groupId, newSusuType);
-    this.setState({ fullname: "", amount: "" });
+    this.setState({ fullname: "", amount: "", otherType: "" });
   };
   render() {
     return (

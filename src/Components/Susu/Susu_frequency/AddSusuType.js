@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { addSusuType } from "../../Redux/Actions/UserActions";
+import { addSusuType } from "../../../Redux/Actions/UserActions";
 
 class AddSusuType extends React.Component {
   constructor(props) {

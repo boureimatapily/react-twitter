@@ -1,5 +1,5 @@
 import React from "react";
-import firebase from "../../Config/fbconfig";
+import firebase from "../../../Config/fbconfig";
 import { connect } from "react-redux";
 import SingleSusuType from "./SingleSusuType";
 

@@ -13,7 +13,7 @@ import PatientList from "./Components/Hospital/Patient/PatientList";
 // import EditSingleDoctor from "./Components/Hospital/Doctor/EditSingleDoctor";
 import AdminPatientTab from "./Components/Hospital/AdminPatientTab";
 import EditGroup from "./Components/Susu/Susu_Group/EditGroup";
-import EditSusuType from "./Components/Susu/EditSusuType";
+import EditSusuType from "./Components/Susu/Susu_frequency/EditSusuType";
 
 
 function App() {
