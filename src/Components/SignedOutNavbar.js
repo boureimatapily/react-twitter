@@ -12,7 +12,7 @@ function SignedOutNavbar() {
             <nav className="navbar navbar-expand-lg navbar-light NavColor">
               <div className="container-fluid">
                 <Link className="navbar-brand brandColor" to="/">
-                Susu market
+                Twitter app
                 </Link>
                 <button
                   className="navbar-toggler"
