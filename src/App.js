@@ -7,11 +7,11 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 
 function App() {
   return (
-    <React.Fragment>
+    <div className="app" >
       <Sidebar/>
       
       
-    </React.Fragment>
+    </div >
   );
 }
 
