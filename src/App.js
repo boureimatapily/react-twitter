@@ -3,12 +3,13 @@ import React from "react";
 //import Navbar from "./Components/Navbar";
 //import { ToastContainer } from "react-toastify"; // ToastContainer to acces to toast notify everywhere in the project
 import 'react-toastify/dist/ReactToastify.css';
+import Sidebar from "./Components/Sidebar/Sidebar";
 
 function App() {
   return (
     <React.Fragment>
-
-      <h1>hello twitter</h1>
+      <Sidebar/>
+      
       
     </React.Fragment>
   );
