@@ -1,10 +1,11 @@
 import React from 'react'
 
-function SidebarItem({props}) {
+function SidebarItem({text, Icon}) {
     return (
         <div>
             <div className="sidebarItem">
-                <h2>item</h2>
+                <Icon />
+                <h2> {text} </h2>
             </div>
         </div>
     )
